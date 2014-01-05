@@ -1,0 +1,311 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    background: #E6E6E6;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.howTo{
+    margin: auto;
+    color: white;
+    width:500px;
+}
+.submit{
+    text-align: center;
+}
+.submit2{
+    width: 130px;
+    height: 40px;
+    font-family: Cursive;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    border-color: red;
+    border-width: 3px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+.numberGuess{
+    text-align: center;
+    background-color: gray;
+    border-width: 0px;
+    width: 50px;
+    margin: 0;
+}
+.Names{
+    float:left
+}
+.completeWrapper{
+    height: 550px;
+    width: 606px;
+    background:black;
+    float: left;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    box-shadow: 10px 10px 10px #888888;
+}
+.madeBy{
+    margin: 10px;
+    width: 550px;
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+}
+.madeBy A:link {text-decoration: none; color:blue;}
+.madeBy A:visited {text-decoration: none; color:red;}
+.madeBy A:hover {text-decoration: underline; color:blue;}
+
+/*********BEGIN SIDEBAR*************/
+.sidebar{
+    margin: 100px 0px 0px 0px;
+    width:200px;
+    height: 370px;
+    background: #333333;
+    float: left;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    box-shadow: 10px 10px 10px #888888;
+}
+.headerBox{
+    width: 98px;
+    height: 50px;
+    float: left;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+.playerBut{
+    margin: 15px;
+    width: 70px;
+    height: 30px;
+    background: white;
+    border-width: 0px;
+}
+.sbHeader{
+    font-family: Cursive;
+    font-size: 40px;
+    text-align: center;
+    color: red;
+    text-shadow: 1px 1px 20px black;
+}
+.nameInputWrap{
+    text-align: center;
+}
+.nameInput{
+    width: 130px;
+    text-align: center;
+    border-color: black;
+    background: gray;
+}
+.nameInputSubmit{
+    margin: 10px;
+    width: 130px;
+    height: 40px;
+    font-family: Cursive;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-color: red;
+    border-width: 3px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+.resetBut{
+    margin: 3px;
+    width: 130px;
+    height: 40px;
+    font-family: Cursive;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-color: red;
+    border-width: 3px;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+/********END SIDEBAR**************/
+
+/*******BEGIN COLUMNS*******************/
+.columnLeft{
+    height: 180px;
+    width: 200px;
+    float: left;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+.columnCenter{
+    float: left;
+    height: 180px;
+    width: 200px;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+.columnRight{
+    height: 180px;
+    width: 200px;
+    float: left;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+.bottomColumnLeft{
+    height: 130px;
+    width: 301px;
+    float: left;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+.bottomColumnRight{
+    height: 130px;
+    width: 301px;
+    float: left;
+    /*border-style:solid;
+    border-color:pink;
+    border-width:1px;*/
+}
+/**********END COLUMNS******************/
+
+/*******BEGIN DEALER DISPLAY BOX********/
+.dealerWrap {
+    width:102px;
+    margin: 25px 25px 25px 50px;
+    text-align: center;
+}
+.dealerName {
+    width: 102px;
+    height: 20px;
+    background-color: red;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+.dealer {
+    width: 100px; 
+    height: 50px; 
+    background-color: black; 
+    font-size: 45px; 
+    color: white; 
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: red;
+}
+
+.dealerScore {
+    float: left;
+    width:80px; 
+    height:20px; 
+    background-color:red; 
+    font-family: Verdana;
+    border-bottom-left-radius: 10px 10px;
+}
+
+.dealerScoreNumber {
+    float: right;
+    width:22px; 
+    height:20px; 
+    background-color:red; 
+    font-family: Verdana;
+    border-bottom-right-radius: 10px 10px;
+}
+/*******END DEALER DISPLAY BOX********/
+.winner{
+    color: white;
+    width: 100%;
+    height: 12px;
+}
+.winnerInside{
+    margin: 40px 0px 0px 0px;
+    color:white;
+    font-size: 18px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+/*******BEGIN PLAYER DISPLAY BOX********/
+
+.player1Wrap {
+    width:102px;
+    margin: 50px 40px 40px 40px;
+    text-align: center;
+}
+.player2Wrap {
+    width:102px;
+    margin: 10px 60px 0px 0px;
+    text-align: center;
+    float: right;
+}
+.player3Wrap {
+    margin: 10px 0px 0px 60px;
+    width: 102px;
+    float: left;
+    text-align: center;
+}
+.player4Wrap {
+    margin: 50px 40px 40px 50px;
+    width:102px;
+    float: left;
+    text-align: center;
+}
+.playerName {
+    width: 102px;
+    height: 20px;
+    background-color: #3399FF;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+.player {
+    width: 100px; 
+    height: 50px; 
+    background-color: black; 
+    font-size: 45px; 
+    color: white; 
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: #3399FF;
+}
+
+.playerScore {
+    float: left;
+    width:80px; 
+    height:20px; 
+    background-color:#3399FF; 
+    font-family: Verdana;
+    border-bottom-left-radius: 10px 10px;
+}
+
+.pScoreNumber {
+    float: right;
+    width:22px; 
+    height:20px; 
+    background-color:#3399FF; 
+    font-family: Verdana;
+    border-bottom-right-radius: 10px 10px;
+}
+.num {
+    margin: 10px;
+    width:80px;
+    background-color: gray;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+}
+/*******END PLAYER DISPLAY BOX********/

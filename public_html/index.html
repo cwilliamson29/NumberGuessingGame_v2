@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Guessing Game Version 2</title>
+        <link rel='stylesheet' href='css/main.css'/>
+        <link rel='stylesheet' href='css/columns.css'/>
+        <link rel='stylesheet' href='css/player.css'/>
+        <link rel='stylesheet' href='css/sidebar.css'/>
+        <link rel='stylesheet' href='css/dealer.css'/>
+        <script src='js/script.js'></script>
+    </head>
+    <body>
+
+        <div class="completeWrapper">
+            <div class="howTo">
+                <center><h1>Number Guessing Game, Version 2</h1></center>
+                <p>The object of the game is to guess the dealers number.<br>
+                    You may have up to 4 players. You May guess a number between 1-10.<br></p>
+                <center> Have fun!</center>
+            </div>
+            <!--Column Left-->
+            <div class="columnLeft">
+                <!--PLAYER 1 DISPLAY BOX-->
+                <div id="p1" class="player1Wrap">
+                    <div id="player1Name" class="playerName"></div>
+                    <div id="player1" class="player"></div>
+                    <div class="playerScore">Score:</div>
+                    <div id="p1Score" class="pScoreNumber"></div>
+                    <div class="num"><input value="0" type="number" id="p1Numguess" class="numberGuess" name="player1num" min="1" max="10"></div>
+                </div>
+
+            </div>
+
+            <!--Column Center-->
+            <div class="columnCenter">
+
+                <!--DEALER DISPLAY BOX-->
+                <div class="dealerWrap">
+                    <div class="dealerName">
+                        <b>DEALER</b></div>
+                    <div id="dealer" class="dealer"></div>
+                    <div class="dealerScore"><b>Score:</b></div>
+                    <div id="dealerScore" class="dealerScoreNumber"><b></b></div>
+                </div>
+
+                <div class="winner">
+                    <div id="winner" class="winnerInside"></div>
+                </div>
+            </div>
+            <!--Column Right-->
+            <div class="columnRight">
+
+                <!--PLAYER 4 DISPLAY BOX-->
+                <div id="p4" class="player4Wrap">
+                    <div id="player4Name"  class="playerName"></div>
+                    <div id="player4" class="player"></div>
+                    <div class="playerScore">Score:</div>
+                    <div id="p4Score" class="pScoreNumber"></div>
+                    <div class="num"><input value="0" type="number" id="p4Numguess" class="numberGuess" name="player4num" min="1" max="10"></div>
+                </div>
+
+            </div>
+
+            <!--Left column for player 2-->
+            <div class="bottomColumnLeft">
+                <!--PLAYER 2 DISPLAY BOX-->
+                <div id="p2" class="player2Wrap">
+                    <div id="player2Name" class="playerName"></div>
+                    <div id="player2" class="player"></div>
+                    <div class="playerScore">Score:</div>
+                    <div id="p2Score" class="pScoreNumber"></div>
+                    <div class="num"><input value="0" type="number" class="numberGuess" name="player2num" id="p2Numguess" min="1" max="10"></div>
+                </div>
+            </div> 
+
+            <!--Right column for player 3-->
+            <div class="bottomColumnRight">
+                <!--PLAYER 3 DISPLAY BOX-->
+                <div id="p3" class="player3Wrap">
+                    <div id="player3Name" class="playerName"></div>
+                    <div id="player3" class="player"></div>
+                    <div class="playerScore">Score:</div>
+                    <div id="p3Score" class="pScoreNumber"></div>
+                    <div class="num"><input value="0" id="p3Numguess" class="numberGuess" type="number" name="player3num" min="1" max="10"></div>
+                </div>
+            </div>
+            <div class="submit"><input class="submit2" type="submit" value="Play!" onClick="Dealer();"></div>
+            <div class="madeBy">Created By: Chris Williamson @ <a href="http://github.com/cwilliamson29" target="blank">GitHib</a></div>
+
+        </div>
+
+        <div class="sidebar">
+            <div class="headerBox"><input type="submit" value="1 Player" class="playerBut" onclick="P1();"></div>
+            <div class="headerBox"><input type="submit" value="2 Player" class="playerBut" onclick="P2();"></div>
+            <div class="headerBox"><input type="submit" value="3 Player" class="playerBut" onclick="P3();"></div>
+            <div class="headerBox"><input type="submit" value="4 Player" class="playerBut" onclick="P4();"></div>
+            <div class="sbHeader">Players</div>
+            <div class="nameInputWrap">
+                <input type="text" name="player1Name" value="Player 1" id="player1Input" class="nameInput">
+                <input type="text" name="player2Name" value="Player 2" id="player2Input" class="nameInput">
+                <input type="text" name="player3Name" value="Player 3" id="player3Input" class="nameInput">
+                <input type="text" name="player4Name" value="Player 4" id="player4Input" class="nameInput">
+                <input type="submit" value="Submit Names" onclick="PlayerNames();" class="nameInputSubmit">
+                <input type=button value="Reset" class="resetBut" onClick="window.location.reload()">
+            </div>
+        </div>
+    </body>
+</html>
